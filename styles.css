@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #efeeee, #e6f0ff);
+    color: #333;
+    padding: 20px;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #9f9e9c, #a3e2d8);
+    color: rgb(250, 250, 246);
+    font-style: revert-layer;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+/* SECTION HEADERS */
+h2 {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 2em;
+    color: #333;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #00b4d8;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+/* ABOUT */
+#about {
+    text-align: center;
+    padding: 20px;
+}
+
+#about img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid #00b4d8;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* SKILLS */
+#skills ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#skills li {
+    background: #caf0f8;
+    padding: 12px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+#skills li:hover {
+    background: #90e0ef;
+}
+
+/* PROJECTS */
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project {
+    background: #dcf0f5;
+    /* Soft light blue background */
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 900px;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.project ul {
+    padding-left: 25px;
+    /* Indents list items from the left edge */
+    padding-right: 25px;
+    margin-top: 10px;
+}
+
+.project li {
+    margin-bottom: 15px;
+    /* Adds vertical spacing between items */
+}
+.project img{
+    position:relative;
+    left:42%;
+    font-weight: bold;
+    
+}
+.project h3 {
+    position: relative;
+    left: 30%;
+}
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* RESUME */
+#resume {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#resume a {
+    display: inline-block;
+    background: #0077b6;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+#resume a:hover {
+    background: #023e8a;
+}
+
+/* CONTACT */
+#contact {
+    text-align: center;
+    padding: 30px 0;
+}
+
+#contact p {
+    margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #0077b6, #0096c7);
+    color: white;
+    border-radius: 10px;
+    margin-top: 40px;
+}
